@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function EditMessage({ id, body, onUpdateMessage }) {
   const [messageBody, setMessageBody] = useState(body);
-
+// Fetch messages from json server (edit by id)
   function handleFormSubmit(e) {
     e.preventDefault();
 

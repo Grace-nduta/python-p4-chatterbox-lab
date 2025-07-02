@@ -9,7 +9,7 @@ function Message({ message, currentUser, onMessageDelete, onUpdateMessage }) {
   const timestamp = new Date(createdAt).toLocaleTimeString();
 
   const isCurrentUser = currentUser.username === username;
-
+// Fetch messages by id from the json server(Delete by id)
   function handleDeleteClick() {
     fetch(`http://127.0.0.1:4000/messages/${id}`, {
       method: "DELETE",

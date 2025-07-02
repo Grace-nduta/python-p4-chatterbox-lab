@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function NewMessage({ currentUser, onAddMessage }) {
   const [body, setBody] = useState("");
-
+// Fetch messages from json server (Post a new message)
   function handleSubmit(e) {
     e.preventDefault();
 
